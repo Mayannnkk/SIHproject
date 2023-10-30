@@ -1,0 +1,360 @@
+body {
+    /* 070f31 */
+    /* #020e419a,#0B0C10,#020e419a */
+    /* ed7966 */
+    /* f75e47 */
+    /*  */
+    background-color: #0B0C10;
+    margin: 0;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0B0C10;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1F2833;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #070f31;
+}
+
+.nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: +1;
+}
+
+.logo {
+    background-image: linear-gradient(to right, #020e419a, #0B0C10, #020e419a);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #7290be;
+}
+.logoimg{
+    width: 230px;
+    height: 50px;
+    /* transform: translate(500px 0px); */
+    margin: 1px 3px;
+}
+
+ul {
+    display: inline-flex;
+    list-style-type: none;
+    background-color: #070f31;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+}
+
+li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    padding: 15px 20px;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li {
+    float: left;
+
+}
+
+li a:hover {
+    color: #9199d2;
+    background-color: #070f31;
+    transition-duration: 0.3s;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #1F2833;
+    color: white;
+    min-width: 100px;
+    padding: 0px 0px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.451);
+}
+
+.drop1:hover .dropdown {
+    display: block;
+
+}
+
+.drop2:hover .dropdown2 {
+    display: block;
+
+}
+
+.drop3:hover .dropdown3 {
+    display: block;
+
+}
+
+a.institute,
+a.course,
+a.topic {
+
+    display: flex;
+    padding: 16px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+
+#icon {
+
+    font-size: 22px;
+    line-height: 0;
+    letter-spacing: normal;
+    text-align: center;
+    transform: translate(-4px, 3px);
+
+}
+
+.search {
+    float: right;
+    display: flex;
+    color: #070f31;
+    transform: translate(600px, 1px);
+}
+
+.search input[type=text] {
+    display: inline-block;
+    background-color: #1F2833;
+    color: #ffffff;
+    font-size: 16px;
+    width: 300px;
+    height: 30px;
+    padding: 10px, 0px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.search button {
+    background-color: #070f31;
+    color: #7290be;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.logn{
+    color: #9199d2;
+    transform: translate(580px, 0px);
+    background-color: #334358;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.containor {
+    display: flex;
+}
+
+.left {
+    position: sticky;
+    background-image: linear-gradient(to right, #020e419a, #0B0C10);
+    display: block;
+    height: 1000px;
+    width: 320px;
+    padding: 0px;
+}
+
+.mid {
+    aspect-ratio: 1;
+    margin: 0;
+    border: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: 0;
+    padding: 40px;
+    display: block;
+    width: 1100px;
+    height: 550px;
+
+}
+
+.mid::-webkit-scrollbar {
+    width: 0px;
+}
+
+.right {
+    position: static;
+    right: 0;
+    float: right;
+    background-image: linear-gradient(to left, #020e419a, #0B0C10);
+    height: 1000px;
+    width: 300px;
+
+}
+
+.profile {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1;
+    margin: 0px 20px;
+    border: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: 0;
+    height: 200px;
+    width: 300px;
+
+}
+
+#bp {
+    color: #7290be;
+    transform: translate(0px, 3px);
+    font-size: 20px;
+    padding: 2px;
+}
+
+.p {
+    font-size: 17px;
+    color: #ffffff;
+    margin: 3px 6px;
+    padding: 20px;
+    background-color: #0b15419a;
+    text-decoration: none;
+}
+
+.p:hover {
+    color: #111;
+    background-color: #7290be;
+}
+
+#user_icon {
+    z-index: -1;
+    font-size: 100px;
+    transform: translate(0px, 14px);
+}
+
+.feed {
+    color: #f2f2f2;
+    width: 1000px;
+    height: 300px;
+    /* background-color: #070f31; */
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.451);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.f {
+    transform: translate(0, 100px);
+    color: #ffffff;
+}
+
+.comment {
+    display: flex;
+}
+
+#c {
+    display: flex;
+    margin: 20px 10px;
+    transform: translate(0, 90px);
+}
+
+#c:hover {
+    color: #7290be;
+    cursor: pointer;
+}
+
+.description {
+    width: 700px;
+    height: 100px;
+    overflow: hidden;
+    transform: translate(0, 100px);
+    text-shadow: 0px px 30px black;
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+
+/* ------------------------------------post feed------------------------- */
+
+.postfeed {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #070f31;
+    display: flex;
+    /* box-sizing: border-box; */
+    flex-direction: column;
+    width: 600px;
+    padding: 40px ;
+}
+
+.postfeed input[type=text],
+textarea {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #1F2833;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input[type=text]:focus,
+input[type=file]:focus {
+    background-color: #1F2833;
+    outline: none;
+}
+
+.postbutton {
+    background-color: #7290be;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+.postbutton:hover {
+    background-color: #334358;
+
+}
+input[type=file]{
+    padding: 10px 0px;
+    margin: 0px;
+    width: 200px;
+}
+.logn{
+    display: flex;
+}

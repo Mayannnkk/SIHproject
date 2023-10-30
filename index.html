@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+
+    <!-- <head>
+        // include('public/css/sheet.ejs'); 
+      </head> --> 
+    <link href="sheet.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    <div class="logo"><img src="lg.png" alt="" class="logoimg"></div>
+    
+
+    <div class="nav">
+    <ul>
+       
+       <div>
+        <li><a href="/" class="active"> Home </a></li>
+       </div>
+       <div class="drop1"> 
+            <li ><a href="#institute">Institute <i class="material-icons" id="icon">keyboard_arrow_down</i></a>
+            <div class="dropdown">
+                <a class="institute" href="#">IET DAVV</a>
+                <a class="institute" href="#">SGSITS</a>
+                <a class="institute" href="#">IIT Bombay</a>
+            </div>
+        </li></div>
+        <div class="drop1"> 
+            <li><a href="#course">Domain <i class="material-icons" id="icon">keyboard_arrow_down</i></a>
+            <div class="dropdown">
+                <a class="course" href="#">Course 1</a>
+                <a class="course" href="#">Course 2</a>
+                <a class="course" href="#">Course 3</a>
+            </div>
+        </li></div>
+        <div class="drop1"> 
+            <li><a href="#topic">Topics <i class="material-icons" id="icon">keyboard_arrow_down</i></a>
+            <div class="dropdown">
+                <a class="topic" href="#">Topic 1</a>
+                <a class="topic" href="#">Topic 2</a>
+                <a class="topic" href="#">Topic 3</a>
+            </div>
+        </li></div>
+        
+        <div>
+            <li><a href="/post.html" class="active"> Post </a></li>
+        </div>
+
+        <div class="search" id="search">
+            <form action="/action_page.php">
+              <input type="text" placeholder="  Search..." name="search">
+              <button type="submit"><i class="material-icons" id="search_icon">search</i></button>
+            </form>
+          </div>
+          <a href="/signup.html" class="logn"><i class="material-icons">login</i></a>
+    </ul>
+    </div>
+
+    <div class="containor">
+        <div class="left">
+            <div class="profile"> 
+                <i class="material-icons" id="user_icon">account_circle</i>
+                <h2>Mayank Sharma</h2>
+                <p>Institute : IET DAVV</p>
+                <p>Projects uploaded :</p>
+                <div class="project">
+                    <a class="p" href="#">Project 1</a>
+                    <a class="p" href="#">Project 2</a>
+                    <a class="p" href="#">Project 3</a>
+                    <a class="p" href="#">Project 4</a>
+                </div>
+                
+                <p><i class="material-icons" id="bp">bookmark</i>Bookmarked projects :</p>
+                <div class="project">
+                    <a class="p" href="#">Project 1</a>
+                    <a class="p" href="#">Project 2</a>
+                    <a class="p" href="#">Project 3</a>
+                    <a class="p" href="#">Project 4</a>
+                </div>
+            </div>
+    
+        </div>
+        <div class="mid">
+        
+            <!-- <% database.forEach(function(f){ %>
+                <div class="feed" id="f1" style="background-image: url(th1.jpg)" onclick="">
+                <h2 class="f"><%=f.p_title %></h2>
+                <div class="description"><%=f.p_description %></div>
+                <div class="comment">
+                    <i class="material-icons" id="c">bookmark</i>
+                    <i class="material-icons" id="c">comment</i>
+                    <i class="material-icons" id="c">exposure_plus_1</i>
+                </div>
+                </div>
+            <% }) %> -->
+    
+             <!-- feeds.forEach(function(f){ %>
+                <div class="feed" id="f1" style="background-image: url(thnum%>.jpg)" onclick="">
+                <h2 class="f">f.title %></h2>
+                <div class="description">f.content %></div>
+                <div class="comment">
+                    <i class="material-icons" id="c">bookmark</i>
+                    <i class="material-icons" id="c">comment</i>
+                    <i class="material-icons" id="c">exposure_plus_1</i>
+                </div>
+                </div>
+             }) %> --> 
+             <div class="feed" id="f1" style="background-image: url('th1.jpg');">
+                <h2 class="f" >Feed 1</h2>
+                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum praesentium aspernatur, asperiores laboriosam repudiandae accusantium magni quaerat facere porro voluptatum rerum officia neque facilis commodi corrupti vero recusandae sunt molestias nesciunt atque id ex necessitatibus molestiae! Eos sapiente incidunt velit repellat ipsum necessitatibus dolore aperiam deleniti eum, ad ut?</div>
+                <div class="comment">
+                    <i class="material-icons" id="c">bookmark</i>
+                    <i class="material-icons" id="c">comment</i>
+                    <i class="material-icons" id="c">exposure_plus_1</i>
+                </div>
+            </div>
+            <div class="feed" id="f2" style="background-image: url('th2.jpg');">
+                <h2 class="f">Feed 2</h2>
+                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, facilis dignissimos vero laboriosam unde, velit cum neque nobis, quas quos repudiandae explicabo! Molestias, aliquid! Corporis mollitia quae voluptatum voluptas, perspiciatis reprehenderit pariatur quaerat eum iusto? Illo architecto atque fugiat aliquam, perferendis ea delectus, consequatur ad ipsum, nihil commodi. Repudiandae est dolore id debitis obcaecati quasi totam enim commodi culpa omnis possimus, similique ipsa porro corrupti sit! Sunt corporis est ea. Obcaecati omnis aspernatur nemo quia ad explicabo molestias, a, dolor excepturi tempore eos repellendus sequi exercitationem. Fugiat eligendi cupiditate, nemo labore voluptatibus in deserunt reiciendis quam optio, reprehenderit quo amet.</div>
+                <div class="comment">
+                    <i class="material-icons" id="c">bookmark</i>
+                    <i class="material-icons" id="c">comment</i>
+                    <i class="material-icons" id="c">exposure_plus_1</i>
+                </div> 
+            </div>
+            <div class="feed" id="f3" style="background-image: url('th3.jpg');">
+                <h2 class="f">Feed 3</h2>
+                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum praesentium aspernatur, asperiores laboriosam repudiandae accusantium magni quaerat facere porro voluptatum rerum officia neque facilis commodi corrupti vero recusandae sunt molestias nesciunt atque id ex necessitatibus molestiae! Eos sapiente incidunt velit repellat ipsum necessitatibus dolore aperiam deleniti eum, ad ut?</div>
+                <div class="comment">
+                    <i class="material-icons" id="c">bookmark</i>
+                    <i class="material-icons" id="c">comment</i>
+                    <i class="material-icons" id="c">exposure_plus_1</i>
+                </div>
+            </div>
+            <div class="feed" id="f4" style="background-image: url('th4.jpg');">
+                <h2 class="f">Feed 4</h2>
+                <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, harum doloremque. Autem, iure numquam sit similique suscipit odit aspernatur porro molestias alias temporibus illum nobis vitae facere maiores nisi ipsam esse optio cumque veritatis tempora quasi fugit. Dolorem delectus voluptates harum enim amet odio. Ut fugiat veniam consequuntur quisquam voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum praesentium aspernatur, asperiores laboriosam repudiandae accusantium magni quaerat facere porro voluptatum rerum officia neque facilis commodi corrupti vero recusandae sunt molestias nesciunt atque id ex necessitatibus molestiae! Eos sapiente incidunt velit repellat ipsum necessitatibus dolore aperiam deleniti eum, ad ut?</div>
+                <div class="comment">
+                    <i class="material-icons" id="c">bookmark</i>
+                    <i class="material-icons" id="c">comment</i>
+                    <i class="material-icons" id="c">exposure_plus_1</i>
+                </div>
+            </div>
+            
+        </div>
+    
+        <!-- <div class="right"> -->
+            
+        
+        
+      </div>
+
+      
+
+
+
+    </body>
+    </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+
+    <!-- <head>
+        // include('public/css/sheet.ejs'); 
+      </head> --> 
+    <link href="sheet.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    <div class="logo"><img src="lg.png" alt="" class="logoimg"></div>
+    
+
+    <div class="nav">
+    <ul>
+       
+       <div>
+        <li><a href="/" class="active"> Home </a></li>
+       </div>
+       <div class="drop1"> 
+            <li ><a href="#institute">Institute <i class="material-icons" id="icon">keyboard_arrow_down</i></a>
+            <div class="dropdown">
+                <a class="institute" href="#">IET DAVV</a>
+                <a class="institute" href="#">SGSITS</a>
+                <a class="institute" href="#">IIT Bombay</a>
+            </div>
+        </li></div>
+        <div class="drop1"> 
+            <li><a href="#course">Domain <i class="material-icons" id="icon">keyboard_arrow_down</i></a>
+            <div class="dropdown">
+                <a class="course" href="#">Course 1</a>
+                <a class="course" href="#">Course 2</a>
+                <a class="course" href="#">Course 3</a>
+            </div>
+        </li></div>
+        <div class="drop1"> 
+            <li><a href="#topic">Topics <i class="material-icons" id="icon">keyboard_arrow_down</i></a>
+            <div class="dropdown">
+                <a class="topic" href="#">Topic 1</a>
+                <a class="topic" href="#">Topic 2</a>
+                <a class="topic" href="#">Topic 3</a>
+            </div>
+        </li></div>
+        
+        <div>
+            <li><a href="/post.html" class="active"> Post </a></li>
+        </div>
+
+        <div class="search" id="search">
+            <form action="/action_page.php">
+              <input type="text" placeholder="  Search..." name="search">
+              <button type="submit"><i class="material-icons" id="search_icon">search</i></button>
+            </form>
+          </div>
+          <a href="/signup.html" class="logn"><i class="material-icons">login</i></a>
+    </ul>
+    </div>
+<div style="display: flex;">
+    <form action="/post" method="post">
+        <div class="postfeed">
+            <label>Name :</label>
+            <input class="form-control" type="text" name="postname" required>
+            <label>Title :</label>
+            <input class="form-control" type="text" name="postTitle" required>
+            <label>Description :</label>
+            <textarea class="form-control" name="postDescription" rows="10" cols="50" required></textarea>
+            <label for="">Upload files :</label>
+            <input type="file">
+            <button class="postbutton" type="submit" name="button">Publish</button>
+        </div>
+    </form>
+    </div>
+
+</body>
+</html>
